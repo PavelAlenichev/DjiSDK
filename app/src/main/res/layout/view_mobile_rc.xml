@@ -38,38 +38,44 @@
             android:layout_marginBottom="10dp"
             style="@style/common_button"/>
     </LinearLayout>
+
     <LinearLayout
         android:id="@+id/group2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
         android:layout_below="@+id/group1"
-        android:orientation="horizontal">
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="3">
 
         <Button
             android:id="@+id/btn_take_off"
-            android:layout_width="120dp"
+            style="@style/common_button"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Take Off"
             android:layout_marginBottom="10dp"
             android:layout_marginRight="10dp"
-            style="@style/common_button"/>
+            android:layout_weight="1"
+            android:text="Take Off" />
 
         <Button
             android:id="@+id/btn_autofly"
-            android:layout_width="120dp"
+            style="@style/common_button"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Auto fly"
             android:layout_marginBottom="10dp"
             android:layout_marginRight="10dp"
-            style="@style/common_button"/>
+            android:layout_weight="1"
+            android:text="Auto fly" />
+
         <Button
             android:id="@+id/btn_auto_land"
-            android:layout_width="120dp"
+            style="@style/common_button"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Auto Land"
             android:layout_marginBottom="10dp"
-            style="@style/common_button"/>
+            android:layout_weight="1"
+            android:text="Auto Land" />
     </LinearLayout>
 
     <com.dji.sdk.sample.internal.utils.OnScreenJoystick
